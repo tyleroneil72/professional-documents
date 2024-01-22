@@ -1,1 +1,199 @@
-% Public Resume File
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{ 
+    \item
+    \begin{tabular*}{\textwidth}{@{}l} 
+      \textbf{\small #1} | \textbf{\small #2} \\ 
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Tyler O'Neil} \\ \vspace{6pt}
+    \small \faIcon{canadian-maple-leaf} Toronto, Ontario ~
+    \href{mailto:tyleroneildev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{tyleroneildev@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/tyler-oneil-dev/}{\raisebox{-0.1\height}\faLinkedin\ \underline{LinkedIn}} ~ 
+    \href{https://github.com/tyleroneil72}{\raisebox{-0.1\height}\faGithub\ \underline{Github}} ~
+    \href{https://tyleroneil.dev}{\raisebox{-0.2\height}\faGlobe\ \underline{tyleroneil.dev}}
+    \vspace{-8pt}
+\end{center}
+
+%---------------EXPERIENCE---------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {George Brown College}{January 2024 -- Present}
+      {Teaching Assistant}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Teaching assistant for COMP1234 - Introduction to Web Development, COMP1235 - Introduction to Full Stack Development}
+        \resumeItem{Additionally, I serve as a Tutor in the T177/T197 Program}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Exchange Solutions Inc.}{May 2023 -- September 2023}
+      {Software Developer Intern}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Created Node.js scripts to build proof of concept applications for cutting-edge projects, including Retrieval Augmented AI
+Agents, Digital Coupon Automation, and the Snowflake Native Application Framework.}
+        \resumeItem{Collaborated with cross-functional teams to explore innovative solutions, conduct experiments, and iterate on ideas to
+drive the development of new technologies and applications.}
+        \resumeItem{Worked closely with senior developers and researchers to create prototypes, conduct feasibility studies, and validate
+concepts, ensuring alignment with project goals and objectives.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {PresenTEC Solutions}{December 2022 -- April 2023}
+      {Front-End Developer Intern}{Vaughan, Ontario}
+      \resumeItemListStart
+        \resumeItem{Oversaw the ongoing maintenance and enhancements of the company website using WordPress, ensuring it remained
+up-to-date and functional.}
+        \resumeItem{Played a key role in selecting templates and shaping the user interface to align with the company's branding, enhancing the
+overall user experience.}
+        \resumeItem{Utilised HTML and CSS to fine-tune website layouts and styles, optimising the site's performance and appearance.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%---------------Projects---------------
+\section{Projects \footnotesize For source code and more check out my website}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {Chat Bot} 
+      {Javascript, React.js, Node.js, Express.js, OpenAI API} 
+    \resumeItemListStart
+        \resumeItem{Engineered a dynamic, full-stack web-based chat bot by harnessing OpenAI's chat completion API, crafting an interactive
+and intuitive conversational interface.}
+        \resumeItem{Orchestrated the architecture and design for both the front end and back end, ensuring seamless functionality and
+customization.}
+        \resumeItem{Employed Git for version control, optimising project management efficiency and enabling streamlined collaboration
+among team members throughout the development life cycle.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Learning Path Creator} 
+      {PHP, MySQL, Bootstrap, Linux, Apache Web Server} 
+    \resumeItemListStart
+        \resumeItem{Led the full-stack development of the Learning Path Creator, a social media web app employing LAMP stack (Linux,
+Apache, MySQL, PHP) and Bootstrap for a robust, visually appealing, and responsive educational platform.}
+        \resumeItem{Conceptualised and implemented features enabling collaborative learning, resource curation, and community engagement,
+empowering educators and learners to create personalised learning paths}
+        \resumeItem{Compiled detailed insights in a comprehensive report outlining the project's functionalities, and technical framework,
+ensuring a scalable and efficient platform for future deployment}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%---------------EDUCATION---------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {George Brown College}{Graduating April 2025}
+      {Advanced Diploma, Computer Programming and Analysis}{Toronto, Ontario}
+      
+    \resumeSubheading
+      {University of Toronto}{September 2019 - April 2022}
+      {Honours Bachelor of Science, Computer Science and Pure Mathematics}{Mississauga, Ontario}
+  \resumeSubHeadingListEnd
+
+%---------------Technial Skills---------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages:}
+      {Javascript/Typescript, Python, Java, C\#, Bash, PHP, SQL, R}
+    \resumeSubItem{Technologies and Frameworks:}
+      {HTML, CSS, Node.js, Express.js, React.js, Vite, Tailwind CSS, Bootstrap, .NET}
+    \resumeSubItem{Databases:}
+      {MySQL, Oracle SQL, Snowflake}
+    \resumeSubItem{Development Tools:}
+      {AWS, Linux, Git/Github, Firebase Hosting, Wordpress, Jira, Confluence, Slack}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
