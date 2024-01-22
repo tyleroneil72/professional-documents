@@ -79,7 +79,12 @@
 }
 
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{ % Two parameters: #1 for title, #2 for list
+  \item
+    \begin{tabular*}{\textwidth}{@{}l@{}l}
+      {\small\textbf{#1}} {\small #2} \\ % Bold title and list on the same line, left-aligned
+    \end{tabular*}\vspace{-5pt}
+}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
