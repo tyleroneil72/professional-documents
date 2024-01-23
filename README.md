@@ -1,7 +1,6 @@
 # Professional Documents
 ![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)
 
-
 Repository for my professional resume and other related documents
 
 ## Note
