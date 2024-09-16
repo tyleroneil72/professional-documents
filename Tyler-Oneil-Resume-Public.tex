@@ -56,33 +56,28 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{ 
     \item
-    \begin{tabular*}{\textwidth}{@{}l} 
-      \textbf{\small #1} | \textbf{\small #2} \\ 
-    \end{tabular*}\vspace{-5pt}
+    \textbf{\small #1} -- \textbf{\small #2}\vspace{-5pt}
 }
-
 
 \newcommand{\resumeSubItem}[2]{ 
   \item
-    \begin{tabular*}{\textwidth}{@{}l@{}l}
-      {\small\textbf{#1}} {\small #2} \\ 
+    \begin{tabular*}{\textwidth}{@{}l p{\dimexpr\textwidth-1.5cm}@{}}{\small\textbf{#1}}\hspace{0.5em} & {\small #2} \\ 
     \end{tabular*}\vspace{-6pt}
 }
 
@@ -92,7 +87,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
 
 %%%%%%  RESUME STARTS HERE  %%%%%%
 \begin{document}
@@ -112,63 +107,55 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {George Brown College}{January 2024 -- Present}
-      {Teaching Assistant}{Toronto, Ontario}
+    \resumeSubheading{George Brown College}{Toronto, Ontario}
+      \resumeSubSubheading{Vice President, Computer Science Club}{September 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Teaching assistant for COMP1234 - Introduction to Web Development, COMP1235 - Introduction to Full Stack Development}
-        \resumeItem{In addition I also contribute as a tutor for the T177/T197 Mobihelp Program}
+        \resumeItem{Organized and led club meetings, fostering collaboration and engagement among members.}
+        \resumeItem{Planned and coordinated events such as coding workshops and guest speaker sessions.}
+        \resumeItem{Assisted in decision-making processes and managed logistics for club activities.}
+      \resumeItemListEnd
+      \resumeSubSubheading{Teaching Assistant}{January 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Teaching assistant for COMP1234 - Introduction to Web Development, COMP1235 - Introduction to Full Stack Development.}
+        \resumeItem{Contributed as a tutor for the T177/T197 (Computer Programming and Analysis) Mobihelp Program.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Exchange Solutions Inc.}{May 2023 -- September 2023}
-      {Software Developer Intern}{Toronto, Ontario}
+    \resumeSubheading{Exchange Solutions Inc.}{Toronto, Ontario}
+      \resumeSubSubheading{Software Developer Intern}{May 2024 -- September 2024}
       \resumeItemListStart
-        \resumeItem{Created Node.js scripts to build proof of concept applications for cutting-edge projects, including Retrieval Augmented AI
-Agents, Digital Coupon Automation, and the Snowflake Native Application Framework.}
-        \resumeItem{Collaborated with cross-functional teams to explore innovative solutions, conduct experiments, and iterate on ideas to
-drive the development of new technologies and applications.}
-        \resumeItem{Worked closely with senior developers and researchers to create prototypes, conduct feasibility studies, and validate
-concepts, ensuring alignment with project goals and objectives.}
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {PresenTEC Solutions}{December 2022 -- April 2023}
-      {Front-End Developer Intern}{Vaughan, Ontario}
+        \resumeItem{Developed features for both frontend and backend, working on the full stack of the loyalty product.}
+        \resumeItem{Used AWS Lambda and a serverless stack to build scalable microservices.}
+        \resumeItem{Enhanced the user interface using React.js while improving API integrations on the backend.}
+        \resumeItem{Collaborated with cross-functional teams to deliver key features in an agile development environment.}
+      \resumeItemListEnd
+      \resumeSubSubheading{Software Developer Intern}{May 2023 -- September 2023}
       \resumeItemListStart
-        \resumeItem{Oversaw the ongoing maintenance and enhancements of the company website using WordPress, ensuring it remained
-up-to-date and functional.}
-        \resumeItem{Played a key role in selecting templates and shaping the user interface to align with the company's branding, enhancing the
-overall user experience.}
-        \resumeItem{Utilised HTML and CSS to fine-tune website layouts and styles, optimising the site's performance and appearance.}
-    \resumeItemListEnd
-    
+        \resumeItem{Created Node.js scripts to build proof of concept applications for projects like Retrieval Augmented AI Agents, Digital Coupon Automation, and the Snowflake Native Application Framework.}
+        \resumeItem{Explored innovative solutions, conducted experiments, and iterated on ideas to drive the development of new technologies.}
+        \resumeItem{Worked closely with senior developers and researchers to create prototypes and validate concepts.}
+      \resumeItemListEnd
+        
+    \resumeSubheading{PresenTEC Solutions}{Vaughan, Ontario}
+      \resumeSubSubheading{Front-End Developer Intern}{December 2022 -- April 2023}
+      \resumeItemListStart
+        \resumeItem{Oversaw the ongoing maintenance and enhancements of the company website using WordPress.}
+        \resumeItem{Selected templates and shaped the user interface to align with the company's branding.}
+        \resumeItem{Utilized HTML and CSS to fine-tune website layouts and styles, optimizing performance and appearance.}
+      \resumeItemListEnd
+      
   \resumeSubHeadingListEnd
 
 %---------------Projects---------------
-\section{Projects \footnotesize For source code and more check out my website}
+\section{Featured Project \footnotesize For source code and more check out my website}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {Chat Bot} 
-      {Javascript, React.js, Node.js, Express.js, OpenAI API} 
+      {Duordle} 
+      {Typescript, React.js, Node.js, Express.js, MongoDB, Tailwind CSS} 
     \resumeItemListStart
-        \resumeItem{Engineered a dynamic, full-stack web-based chat bot by harnessing OpenAI's chat completion API, crafting an interactive
-and intuitive conversational interface.}
-        \resumeItem{Orchestrated the architecture and design for both the front end and back end, ensuring seamless functionality and
-customization.}
+        \resumeItem{Developed a multiplayer online word game where users collaboratively guess words. Implemented real-time communication between players using Socket.io.}
+        \resumeItem{Designed and built the entire game architecture, including game state management and custom word bank creation.}
+        \resumeItem{Ensured responsive design for various screen sizes and optimized performance for seamless gameplay experience.}
         \resumeItem{Used Git for version control to enhance project management efficiency, facilitating a streamlined workflow throughout the development life cycle while working independently.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-      {Learning Path Creator} 
-      {PHP, MySQL, Bootstrap, Linux, Apache Web Server} 
-    \resumeItemListStart
-        \resumeItem{Led the full-stack development of the Learning Path Creator, a social media web app employing LAMP stack (Linux,
-Apache, MySQL, PHP) and Bootstrap for a robust, visually appealing, and responsive educational platform.}
-        \resumeItem{Conceptualised and implemented features enabling collaborative learning, resource curation, and community engagement,
-empowering educators and learners to create personalised learning paths}
-        \resumeItem{Compiled detailed insights in a comprehensive report outlining the project's functionalities, and technical framework,
-ensuring a scalable and efficient platform for future deployment}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -176,34 +163,30 @@ ensuring a scalable and efficient platform for future deployment}
 %---------------EDUCATION---------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {George Brown College}{Graduating April 2025}
-      {Advanced Diploma, Computer Programming and Analysis}{Toronto, Ontario}
+    \resumeSubheading{George Brown College}{Toronto, Ontario}
+      \resumeSubSubheading{Advanced Diploma, Computer Programming and Analysis}{Graduating April 2025}
       \resumeItemListStart
-          \resumeItem{3.81/4.0 GPA, Dean's List -- Fall 2022; Winter 2023; Fall 2023}
-          \resumeItem{Relevant Courses: Advanced Web Programming, Full-Stack Development, Advanced Database
-Development, Advanced Object Oriented Programming, Linux Essentials, Data Structures and Algorithms, Agile Software Development}
+          \resumeItem{3.84/4.0 GPA, Dean's List -- Fall 2022; Winter 2023; Fall 2023; Winter 2024}
+          \resumeItem{Relevant Courses: Advanced Web Programming, Full-Stack Development, Advanced Database Development, Advanced Object Oriented Programming, Linux Essentials, Data Structures and Algorithms, Agile Software Development}
       \resumeItemListEnd
-    \resumeSubheading
-      {University of Toronto}{September 2019 -- April 2022}
-      {Honours Bachelor of Science, Computer Science and Pure Mathematics}{Mississauga, Ontario}
+    \resumeSubheading{University of Toronto}{Mississauga, Ontario}
+      \resumeSubSubheading{Honours Bachelor of Science, Computer Science and Pure Mathematics}{September 2019 -- April 2022}
       \resumeItemListStart
           \resumeItem{Previously attended before transferring to George Brown College}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%---------------Technial Skills---------------
+%---------------Technical Skills---------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages:}
       {Javascript/Typescript, Python, Java, C\#, Bash, PHP, SQL, R}
-      \resumeSubItem{Technologies and Frameworks:}
-      {HTML, CSS, Node.js, Express.js, React.js, Vite, Mongoose, Tailwind CSS, Bootstrap, .NET}
+    \resumeSubItem{Technologies and Frameworks:}
+      {HTML, CSS, Node.js, Express.js, React.js, Tailwind CSS, Bootstrap, .NET}
     \resumeSubItem{Databases:}
       {MySQL, Oracle SQL, SQLite, Snowflake, MongoDB}
     \resumeSubItem{Development Tools:}
-      {AWS, Azure, Linux, Git/Github, Firebase Hosting, Wordpress, Jira, Confluence, Slack}
+      {AWS, Linux, Git/Github, WordPress, Jira, Confluence, Slack}
   \resumeSubHeadingListEnd
-
 
 \end{document}
