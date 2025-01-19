@@ -36,56 +36,56 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-3pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 \pdfgentounicode=1
 
 % CUSTOM COMMANDS
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\classesList}[4]{
     \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
+      {#1 #2 #3 #4 \vspace{-2pt}}
+ }
 }
 
 \newcommand{\resumeSubheading}[2]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       {\small\:\textbf{#1}} & {\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{ 
     \item
-    \textbf{\small #1} -- \textbf{\small #2}\vspace{-5pt}
+    \textbf{\small #1} -- \textbf{\small #2}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubItem}[2]{ 
-  \item
+ \item
     \begin{tabular*}{\textwidth}{@{}l p{\dimexpr\textwidth-1.5cm}@{}}{\small\textbf{#1}}\hspace{0.5em} & {\small #2} \\ 
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 %%%%%%  DOCUMENT STARTS HERE  %%%%%%
 \begin{document}
@@ -93,13 +93,13 @@
 %---------------HEADER---------------
 \begin{center}
     {\Huge \scshape Tyler O'Neil} \\
-    \vspace{6pt}
+    \vspace{4pt}
     \small \faIcon{canadian-maple-leaf} Toronto, Ontario ~
     \href{mailto:tyleroneildev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{tyleroneildev@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/tyler-oneil-dev/}{\raisebox{-0.1\height}\faLinkedin\ \underline{LinkedIn}} ~ 
     \href{https://github.com/tyleroneil72}{\raisebox{-0.1\height}\faGithub\ \underline{GitHub}} ~
     \href{https://tyleroneil.dev}{\raisebox{-0.2\height}\faGlobe\ \underline{tyleroneil.dev}}
-    \vspace{-8pt}
+    \vspace{-6pt}
 \end{center}
 
 %---------------EXPERIENCE---------------
@@ -120,7 +120,7 @@
         \resumeItem{Developed and tested multiple technical solutions through iterative prototyping to validate new technologies}
         \resumeItem{Worked with senior developers to design and implement prototype solutions that aligned with project requirements}
       \resumeItemListEnd
-        
+
     \resumeSubheading{PresenTEC Solutions}{Vaughan, Ontario}
       \resumeSubSubheading{Front-End Developer Intern}{December 2022 -- April 2023}
       \resumeItemListStart
@@ -128,7 +128,7 @@
         \resumeItem{Implemented UI improvements following company brand guidelines to ensure consistent user experience}
         \resumeItem{Refined website performance through targeted {\bf HTML} and {\bf CSS} optimizations}
       \resumeItemListEnd
-      
+
   \resumeSubHeadingListEnd
 
 %---------------PROJECT---------------
