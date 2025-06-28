@@ -48,24 +48,26 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-      {#1 #2 #3 #4 \vspace{-2pt}}
- }
+\newcommand{\resumeEduheading}[4]{
+  \item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    \hspace*{0.5em}\textbf{\small#3} & {\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheading}[2]{
     \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       {\small\:\textbf{#1}} & {\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{ 
@@ -109,24 +111,22 @@
     \resumeSubheading{Exchange Solutions Inc.}{Toronto, Ontario}
       \resumeSubSubheading{Software Developer}{May 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Build and enhance loyalty program features for clients such as {\bf Esso}, {\bf Rexall}, and {\bf Suncor}.}
-        \resumeItem{Work within an {\bf Agile} team to deliver microservice-based features across multiple business units.}
-        \resumeItem{Collaborate closely with senior developers and product managers to translate business requirements into reliable, testable backend services and front-end components.}
+        \resumeItem{Develop scalable features for a large-scale loyalty platform, contributing across frontend {\bf(React, TypeScript)} and backend {\bf(AWS serverless microservices, TypeScript)} development in a production environment.}
+        \resumeItem{Ensure code quality and reliability by writing and maintaining {\bf unit tests} and participating in peer code reviews.}
+        \resumeItem{Apply {\bf agile} methodologies to drive new feature development, optimize system performance, and ensure code maintainability.}
+        \resumeItem{Work closely with senior engineers and product owners, further deepening technical expertise and product knowledge to deliver solutions impacting millions of end users.}
       \resumeItemListEnd
 
     \resumeSubSubheading{Software Developer Intern}{May 2024 -- August 2024}
       \resumeItemListStart
-        \resumeItem{Developed and implemented {\bf full-stack} features for the company's enterprise loyalty platform.}
-        \resumeItem{Built scalable microservices using {\bf AWS Lambda} and {\bf serverless} architecture to improve system efficiency.}
-        \resumeItem{Enhanced user interface components with {\bf React.js} and developed backend {\bf API} integrations to improve functionality.}
-        \resumeItem{Delivered key features as part of an {\bf Agile} team, maintaining high code quality and meeting project deadlines.}
+        \resumeItem{Contributed to both frontend {\bf(React, TypeScript)} and backend {\bf(AWS serverless microservices, TypeScript)} development on a large-scale, production-grade loyalty platform.}
+        \resumeItem{Developed practical skills in {\bf cloud infrastructure (AWS)}, {\bf CI/CD (Jenkins)}, and Atlassian tools in a collaborative, fast-paced environment.}
       \resumeItemListEnd
 
-    \resumeSubSubheading{Software Developer Intern (Innovation Labs)}{May 2023 -- September 2023}
+      \resumeSubSubheading{Software Developer Intern (Innovation Labs)}{May 2023 -- September 2023}
       \resumeItemListStart
-        \resumeItem{Built proof-of-concept applications using {\bf Node.js} for {\bf AI-assisted retrieval}, {\bf digital coupon automation}, and {\bf Snowflake Native Applications}.}
-        \resumeItem{Developed and tested multiple technical solutions through iterative prototyping to validate new technologies.}
-        \resumeItem{Worked with senior developers to design and implement prototype solutions that aligned with project requirements.}
+        \resumeItem{Developed proof-of-concept {\bf Retrieval Augmented Generation (RAG)} AI agents using {\bf Node.js} and {\bf OpenAI APIs}, in direct collaboration with the Director of Innovation Labs.}
+        \resumeItem{Conducted {\bf research and rapid prototyping} that directly contributed to the adoption of {\bf generative AI} capabilities in the company's core loyalty product.}
       \resumeItemListEnd
 
     \resumeSubheading{PresenTEC Solutions}{Vaughan, Ontario}
@@ -134,21 +134,29 @@
       \resumeItemListStart
         \resumeItem{Maintained and improved company website functionality using {\bf WordPress} and custom development.}
         \resumeItem{Implemented UI improvements following company brand guidelines to ensure consistent user experience.}
-        \resumeItem{Refined website performance through targeted {\bf HTML} and {\bf CSS} optimizations.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%---------------PROJECT---------------
-\section{Featured Project \footnotesize For source code and more check out my website}
+%---------------PROJECTS---------------
+\section{Projects \footnotesize -- More information available on my {\href{https://tyleroneil.dev}{Website~\faExternalLink*}}}
   \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {{Nest}}
+      {Typescript, Next.js, NextAuth.js, PostgreSQL, Prisma, Tailwind CSS, Stripe} 
+    \resumeItemListStart
+      \resumeItem{Designed and developed a minimalist investment tracker that provides users with personalized insights and projections for their portfolios, supporting multiple accounts and asset types.}
+      \resumeItem{Implemented secure {\bf Google sign-in}, account management, and authorization features to protect user privacy and ensure data integrity.}
+      \resumeItem{Integrated subscription billing ({\bf Stripe}) and direct brokerage connections ({\bf SnapTrade}), enabling users to track investments manually or automatically with real-time data.}
+    \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://duordle.net}{Duordle~\faExternalLink*}}
       {Typescript, React.js, Node.js, Express.js, MongoDB, Tailwind CSS, Docker, Jest} 
     \resumeItemListStart
       \resumeItem{Developed a multiplayer online word game where users collaboratively guess words, utilizing {\bf Socket.io} for real-time communication between players.}
-      \resumeItem{Designed and built the game architecture, including game state management, custom word bank creation, and {\bf Dockerized} the application for easy deployment and scalability.}
+      \resumeItem{Containerized the application with {\bf Docker} to enable streamlined deployment and seamless scalability.}
       \resumeItem{Implemented comprehensive unit testing using {\bf Jest} to ensure code reliability and robustness throughout development.}
       \resumeItem{Set up a {\bf CI/CD} pipeline and utilized {\bf Git} for version control, streamlining the development workflow and enabling efficient project management while working independently.}
     \resumeItemListEnd
@@ -158,24 +166,11 @@
 %---------------EDUCATION---------------
 \section{Education}
   \resumeSubHeadingListStart
-
-    \resumeSubheading{McMaster University}{Hamilton, Ontario}
-      \resumeSubSubheading{Bachelor of Technology, Software Engineering Technology}{ September 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Pursuing part-time while working full-time as a developer.}
-      \resumeItemListEnd
-
-    \resumeSubheading{George Brown College}{Toronto, Ontario}
-      \resumeSubSubheading{Advanced Diploma, Computer Programming and Analysis}{Graduated April 2025}
-      \resumeItemListStart
-        \resumeItem{3.86/4.0 GPA -- Dean's List Scholar}
-        \resumeItem{{\bf Vice President of the Computer Science Club:} Organized and led club meetings, coordinated events, and supported member engagement.}
-        \resumeItem{{\bf Teaching Assistant:} Assisted in teaching COMP1234 - Introduction to Web Development, COMP1235 - Full Stack Development, and COMP2080 Data Structures and Algorithms.}
-        \resumeItem{{\bf Academic Tutor:} Provided academic support through the T177/T197 Mobihelp program for Computer Programming and Analysis students.}
-      \resumeItemListEnd
-
+    \resumeEduheading
+      {McMaster University}{Hamilton, Ontario}
+      {Bachelor of Technology, Software Engineering Technology}{}
+      \item \hspace*{0.5em}{\footnotesize Pursuing part-time while working full-time as a developer \textbar\ VP of Projects, McMaster Open Source Society (MOSS)}
   \resumeSubHeadingListEnd
-
 
 %---------------TECHNICAL SKILLS---------------
 \section{Technical Skills}
@@ -187,7 +182,7 @@
     \resumeSubItem{Databases:}
       {MySQL, PostgreSQL, Oracle SQL, SQLite, Snowflake, MongoDB}
     \resumeSubItem{Development Tools:}
-      {AWS, Docker, Linux, Git, GitHub, Jenkins, Postman, Jira, Bitbucket, Confluence}
+      {AWS, Docker, Linux, Git, GitHub, Jenkins, Postman, Stripe, Jira, Bitbucket, Confluence}
   \resumeSubHeadingListEnd
 
 \end{document}
